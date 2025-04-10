@@ -119,6 +119,8 @@ body {
 
 /* 卡片设计 */
 .card {
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 10px;
     padding: 1rem;
