@@ -120,10 +120,11 @@ body {
 /* 卡片设计 */
 .card {
     background: white;
-    border-radius: 100px;
+    border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    overflow: visible;
 }
 
 .card:hover {
@@ -134,9 +135,10 @@ body {
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 6px;
     margin-bottom: 1rem;
+    padding: 5px;
 }
 
 .card .text {
