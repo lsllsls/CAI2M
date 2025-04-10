@@ -1,0 +1,19 @@
+/* 基础样式 */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; /* 适合英文的字体 */
+    line-height: 1.6;
+    color: #333; /* 深灰色提升可读性 */
+}
+
+/* 卡片标题样式 */
+.text-box h3 {
+    color: #2c3e50; /* 专业深蓝色 */
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+}
+
+/* 论文标题特殊样式 */
+.paper-title {
+    font-style: italic;
+    color: #e74c3c; /* 强调色 */
+}
