@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-to-Music Generation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <audio controls>
-    <source src="samples/sample_1/music.wav" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+    <header>
+        <h1>Image-to-Music Generation Demo</h1>
+        <p>Paper: "<span class="paper-title">Towards Image-to-Music Generation: Musical Captioning as Bridge across Modalities</span>"</p>
+    </header>
+
+    <div class="container">
+        <!-- Example Entry 1 -->
+        <div class="card">
+            <div class="image-box">
+                <img src="samples/sample_1/image.png" alt="Generated Example 1">
+            </div>
+            <div class="text-box">
+                <h3>Text Description</h3>
+                <p>A serene morning forest with birds chirping and a flowing stream.</p>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="samples/sample_1/music.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Repeat for Entries 2-10 -->
+        <!-- Entry 2 -->
+        <div class="card">
+            <div class="image-box">
+                <img src="samples/sample_2/image.png" alt="Generated Example 2">
+            </div>
+            <div class="text-box">
+                <h3>Text Description</h3>
+                <p>[Your translated description here]</p>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="samples/sample_2/music.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Continue through Entry 10 -->
+    </div>
+
+    <footer>
+        <p>© 2024 Your Name | Project Repository: <a href="your-repo-url">GitHub</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
