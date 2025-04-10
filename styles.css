@@ -31,6 +31,82 @@ body {
     opacity: 0.9;
 }
 
+/* 说明区域样式 */
+.description {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.description h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.description h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    margin: 0.8rem auto;
+    border-radius: 2px;
+}
+
+.instructions {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+
+.instructions p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.instructions ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.instructions li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.instructions strong {
+    color: #2c3e50;
+}
+
+.instructions em {
+    color: #e74c3c;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .description {
+        padding: 0 1rem;
+    }
+    
+    .instructions {
+        padding: 1.5rem;
+    }
+    
+    .instructions p {
+        font-size: 1rem;
+    }
+}
+
 /* 网格容器 */
 .grid-container {
     display: grid;
