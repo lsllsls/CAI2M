@@ -2,151 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image-to-Music Generation Demo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Image-Text-Music Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Image → Text → Music Generation</h1>
-    </header>
+    <!-- 标题区 -->
+    <div class="header">
+        <h1>Multimodal Generation Demo</h1>
+        <p class="subtitle">10 Examples in 2 Rows</p>
+    </div>
 
-    <main class="gallery-container">
-        <!-- Row 1 -->
-        <div class="gallery-row">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_1/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_1/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-            <!-- Repeat Card 2-5 here -->
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_2/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_2/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_3/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_3/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_4/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_4/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_5/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_5/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+    <!-- 第一行 -->
+    <div class="grid-container">
+        <div class="card">
+            <img src="samples/sample_1/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_1/music.wav" type="audio/mpeg">
+            </audio>
         </div>
-
-        <!-- Row 2 -->
-        <div class="gallery-row">
-            <!-- Card 6-10 -->
-            <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_6/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_6/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-            <!-- Repeat Card 2-5 here -->
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_7/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_7/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_8/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_8/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_9/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_9/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
-             <div class="card">
-                <div class="card-image">
-                    <img src="samples/sample_10/image.png" alt="Sample 1">
-                </div>
-                <div class="card-content">
-                    <h3>Description</h3>
-                    <p>A vibrant sunset over ocean waves with seagulls soaring</p>
-                    <audio controls>
-                        <source src="samples/sample_10/music.wav" type="audio/mpeg">
-                    </audio>
-                </div>
-            </div>
+        <!-- Repeat Card 2-5 here -->
+        <div class="card">
+            <img src="samples/sample_2/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_2/music.wav" type="audio/mpeg">
+            </audio>
         </div>
-    </main>
+        <div class="card">
+            <img src="samples/sample_3/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_3/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="samples/sample_4/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_4/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="samples/sample_5/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_5/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+        
+        <!-- 示例2-5 (结构相同) -->
+        <!-- 复制粘贴示例1的代码块并修改数字即可 -->
+    </div>
 
-    <footer class="footer">
-        <p>© 2024 Your Lab | <a href="#">View Source on GitHub</a></p>
-    </footer>
+    <!-- 第二行 -->
+    <div class="grid-container">
+        <!-- 示例6-10 -->
+        <div class="card">
+            <img src="samples/sample_6/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_6/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <!-- Repeat Card 2-5 here -->
+        <div class="card">
+            <img src="samples/sample_7/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_7/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="samples/sample_8/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_8/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="samples/sample_9/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_9/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="card">
+            <img src="samples/sample_10/image.png" alt="Sample 1">
+            <div class="text">A vibrant sunset over ocean waves with seagulls soaring</div>
+            <audio controls>
+                <source src="samples/sample_10/music.wav" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
 </body>
 </html>
