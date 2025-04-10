@@ -44,7 +44,7 @@ body {
 /* 卡片设计 */
 .card {
     background: white;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 1rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
