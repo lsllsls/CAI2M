@@ -1,31 +1,29 @@
-/* 基础样式 */
-:root {
-    --primary-color: #2c3e50;
-    --accent-color: #3498db;
-    --text-color: #333;
+/* 基础重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', system-ui, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    color: var(--text-color);
+    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* 标题区 */
-.hero {
+/* 标题设计 */
+.header {
     text-align: center;
-    padding: 4rem 2rem;
-    background: var(--primary-color);
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
     color: white;
-    margin-bottom: 3rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: -0.5px;
+.header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
 
 .subtitle {
@@ -33,104 +31,77 @@ body {
     opacity: 0.9;
 }
 
-/* 5列网格布局 */
-.gallery-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.gallery-row {
+/* 网格容器 */
+.grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto 2rem;
+    padding: 0 20px;
 }
 
 /* 卡片设计 */
 .card {
     background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.card-image img {
+.card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-    border-bottom: 2px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 1rem;
 }
 
-.card-content {
-    padding: 1.2rem;
-}
-
-.card-content h3 {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-}
-
-.card-content p {
-    font-size: 0.9rem;
+.card .text {
+    font-size: 0.95rem;
+    color: #555;
     line-height: 1.4;
     margin-bottom: 1rem;
-    height: 60px; /* 固定文字高度 */
-    overflow: hidden;
+    min-height: 60px; /* 保持文字区域高度一致 */
 }
 
-/* 音频播放器美化 */
 audio {
     width: 100%;
-    margin-top: 0.8rem;
-}
-
-audio::-webkit-media-controls-panel {
-    background-color: #f8f9fa;
-}
-
-/* 页脚 */
-.footer {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    background: var(--primary-color);
-    color: white;
+    margin-top: 0.5rem;
 }
 
 /* 响应式设计 */
 @media (max-width: 1200px) {
-    .gallery-row {
+    .grid-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 992px) {
-    .gallery-row {
+    .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .gallery-row {
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
     }
 }
 
-@media (max-width: 576px) {
-    .gallery-row {
+@media (max-width: 480px) {
+    .grid-container {
         grid-template-columns: 1fr;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
     }
 }
