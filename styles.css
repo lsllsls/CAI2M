@@ -1,4 +1,4 @@
-/* 基础重置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,6 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* 标题设计 */
 .header {
     text-align: center;
     padding: 3rem 0;
@@ -31,7 +30,7 @@ body {
     opacity: 0.9;
 }
 
-/* 说明区域样式 */
+
 .description {
     max-width: 1200px;
     margin: 0 auto 3rem;
@@ -92,7 +91,7 @@ body {
     font-weight: 600;
 }
 
-/* 响应式调整 */
+
 @media (max-width: 768px) {
     .description {
         padding: 0 1rem;
@@ -107,7 +106,7 @@ body {
     }
 }
 
-/* 网格容器 */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -117,7 +116,7 @@ body {
     padding: 0 10px;
 }
 
-/* 卡片设计 */
+
 .card {
     display: flex;
     flex-direction: column;
@@ -148,7 +147,7 @@ body {
     color: #555;
     line-height: 1.4;
     margin-bottom: 1rem;
-    min-height: 60px; /* 保持文字区域高度一致 */
+    min-height: 60px; 
 }
 
 audio {
@@ -156,7 +155,7 @@ audio {
     margin-top: auto;
 }
 
-/* 响应式设计 */
+
 @media (max-width: 1200px) {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
